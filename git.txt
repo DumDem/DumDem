@@ -1,0 +1,37 @@
+//mac
+cd <carpeta> -> entra en carpeta
+cd .. -> sale de carpeta
+mkdir <carpeta> -> crea carpeta
+vim <archivo> -> crea archivo
+ls -> ver archivos
+ls  -a -> ver todos los archivos
+
+//conceptos
+stage -> indice. almacena archivos antes de guardar definitivamente cambios
+
+//git
+git -> mostra tots el comandos disponibles
+git init -> crea repositorio
+git status -> estado del repositorio
+git add <archivo> -> añade archivo al stage
+git add . -> añade todos los archivos al stage
+git commit -> registra los cambios que hay en stage
+:wq -> guardar
+git log -> historico de commit
+git diff -> ver diferencias entre cambios que no estan en stage y ultimo commit
+git commit --amend -> registra cambios que hay en el stage en el ultimo commit que se ha hecho. se usa cuando se ha olvidado añadir algo al stage pero no quieres hacer un commit separado
+git checkout --<archivo> -> deshace cambios en un archivo que no está en el stage
+git reset HEAD <archivo> -> elimina del stage un cambio. head significa que es del último commit. para modificar hay que hacer checkout
+git log --oneline -> historico de commit en una linea. mas sencillo para saber codigo
+git reset <commit> -> vuelve al commit indicado y sus archivos estaran sin almacenar en el stage. luego se puede hacer checkout
+git rm --cached <archivo> -> deshace cambios de un archivo que no está en el stage 
+git remote add <nombre> <https> -> añade un remoto con ese nombre. se suele utilizar origin
+git remote -> da información de repositorios remotos
+git remote -v -> ver toda la información de repositorios remotos
+git push <nombre> <rama> -> envia esa rama al repositorio remoto con ese nombre. normalmente rama master
+git push <nombre> --all -> envia todas las ramas al repositorio remoto con ese nombre
+git clone <url> -> clona ese repositorio remoto. se puede ejecutar en cualquier parte
+git lod -> historico de todos los commits
+git pull <nombre> <rama> -> actualiza rama desde el repositorio remoto con ese nombre
+git branch -> lista de ramas
+git branch --all -> lista de todas las ramas
